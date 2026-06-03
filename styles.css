@@ -43,6 +43,29 @@ h2 {
   font-size: 1.45rem;
 }
 
+.details {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0 0;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.details div {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 18px;
+}
+
+.details dt {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.details dd {
+  margin: 0;
+}
+
 .role {
   margin: 0 0 8px;
   color: var(--muted);
@@ -81,5 +104,10 @@ a {
   .page {
     width: min(100% - 24px, 900px);
     padding-top: 34px;
+  }
+
+  .details div {
+    grid-template-columns: 1fr;
+    gap: 2px;
   }
 }
