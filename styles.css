@@ -26,9 +26,24 @@ body {
 }
 
 .profile {
+  display: grid;
+  grid-template-columns: 148px 1fr;
+  gap: 24px;
+  align-items: center;
   padding-bottom: 28px;
   border-bottom: 1px solid var(--line);
   margin-bottom: 36px;
+}
+
+.portrait {
+  display: block;
+  width: 148px;
+  height: 148px;
+  object-fit: cover;
+  object-position: 50% 45%;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: #eef4f4;
 }
 
 h1 {
@@ -137,6 +152,16 @@ a {
   .details div {
     grid-template-columns: 1fr;
     gap: 2px;
+  }
+
+  .profile {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .portrait {
+    width: 124px;
+    height: 124px;
   }
 
   .photo-grid {
