@@ -20,3 +20,4 @@ Open `index.html` directly in a browser.
 - `index.html`: website content.
 - `styles.css`: responsive visual styling.
 - `assets/Yiming_Wang_CV.pdf`: downloadable CV.
+- `assets/field/`: resized field photos used on the homepage.
