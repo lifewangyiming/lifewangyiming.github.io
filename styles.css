@@ -40,7 +40,7 @@ body {
   width: 148px;
   height: 148px;
   object-fit: cover;
-  object-position: 50% 45%;
+  object-position: 40% 50%;
   border-radius: 50%;
   border: 1px solid var(--line);
   background: #eef4f4;
