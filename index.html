@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Yiming Wang - hydrology, remote sensing, global lake dynamics, and climate impacts.">
-    <title>Yiming Wang</title>
+    <title>Yiming Wang | 王一鸣</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body data-lang="en">
@@ -17,7 +17,10 @@
       <header class="profile">
         <img class="portrait" src="assets/profile-yiming-glacier.jpeg" alt="Yiming Wang during glacier fieldwork">
         <div>
-          <h1>Yiming Wang</h1>
+          <h1>
+            <span class="lang lang-en">Yiming Wang</span>
+            <span class="lang lang-zh">王一鸣</span>
+          </h1>
           <p class="role">
             <span class="lang lang-en">Hydrology, remote sensing, and global lake climate research</span>
             <span class="lang lang-zh">水文学、遥感与全球湖泊气候变化研究</span>
@@ -211,6 +214,7 @@
 
       function setLanguage(lang) {
         document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+        document.title = lang === "zh" ? "王一鸣" : "Yiming Wang";
         document.body.dataset.lang = lang;
         langButtons.forEach((button) => {
           button.setAttribute("aria-pressed", String(button.dataset.langButton === lang));
