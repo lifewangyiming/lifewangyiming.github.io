@@ -76,11 +76,7 @@
             <span class="lang lang-en">Beijing, China</span>
             <span class="lang lang-zh">北京，中国</span> ·
             <a href="mailto:wang-ym17@tsinghua.org.cn">wang-ym17@tsinghua.org.cn</a> ·
-            <a href="https://www.researchgate.net/profile/Yiming-Wang-52?ev=hdr_xprf">ResearchGate</a> ·
-            <a href="assets/Yiming_Wang_CV.pdf">
-              <span class="lang lang-en">CV</span>
-              <span class="lang lang-zh">个人简历</span>
-            </a>
+            <a href="https://www.researchgate.net/profile/Yiming-Wang-52?ev=hdr_xprf">ResearchGate</a>
               </p>
               <p class="lang lang-en">
                 I am a hydrology and remote-sensing researcher with a Ph.D. in Hydraulic Engineering from
@@ -282,24 +278,13 @@
         langButtons.forEach((button) => {
           button.setAttribute("aria-pressed", String(button.dataset.langButton === lang));
         });
-        try {
-          localStorage.setItem("homepage-language", lang);
-        } catch (error) {
-          // The switch still works if browser storage is unavailable.
-        }
       }
 
       langButtons.forEach((button) => {
         button.addEventListener("click", () => setLanguage(button.dataset.langButton));
       });
 
-      let savedLanguage = "en";
-      try {
-        savedLanguage = localStorage.getItem("homepage-language") || "en";
-      } catch (error) {
-        savedLanguage = "en";
-      }
-      setLanguage(savedLanguage === "zh" ? "zh" : "en");
+      setLanguage("en");
 
     </script>
   </body>
