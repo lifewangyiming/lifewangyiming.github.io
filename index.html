@@ -8,24 +8,71 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body data-lang="en">
-    <main class="page">
-      <div class="lang-switch" aria-label="Language switch">
-        <button type="button" data-lang-button="en" aria-pressed="true">English</button>
-        <button type="button" data-lang-button="zh" aria-pressed="false">中文</button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="nav-inner">
+        <a class="nav-brand" href="#home">
+          <span class="lang lang-en">Yiming Wang</span>
+          <span class="lang lang-zh">王一鸣</span>
+        </a>
+        <div class="nav-actions">
+          <div class="nav-links">
+            <a href="#profile">
+              <span class="lang lang-en">Profile</span>
+              <span class="lang lang-zh">简介</span>
+            </a>
+            <a href="#publications">
+              <span class="lang lang-en">Publications</span>
+              <span class="lang lang-zh">论文</span>
+            </a>
+            <a href="#awards">
+              <span class="lang lang-en">Awards</span>
+              <span class="lang lang-zh">荣誉</span>
+            </a>
+            <a href="#fieldwork">
+              <span class="lang lang-en">Fieldwork</span>
+              <span class="lang lang-zh">科考</span>
+            </a>
+          </div>
+          <div class="lang-switch" aria-label="Language switch">
+            <button type="button" data-lang-button="en" aria-pressed="true">EN</button>
+            <button type="button" data-lang-button="zh" aria-pressed="false">中文</button>
+          </div>
+        </div>
       </div>
+    </nav>
 
-      <header class="profile">
-        <img class="portrait" src="assets/profile-yiming-glacier.jpeg" alt="Yiming Wang during glacier fieldwork">
-        <div>
-          <h1>
-            <span class="lang lang-en">Yiming Wang</span>
-            <span class="lang lang-zh">王一鸣</span>
-          </h1>
-          <p class="role">
-            <span class="lang lang-en">Hydrology, lake modeling, satellite remote sensing, and climate impacts</span>
-            <span class="lang lang-zh">水文学、湖泊模型、卫星遥感与气候影响研究</span>
-          </p>
-          <p class="contact">
+    <header class="hero" id="home">
+      <div class="hero-inner">
+        <h1>
+          <span class="lang lang-en">Yiming Wang</span>
+          <span class="lang lang-zh">王一鸣</span>
+        </h1>
+        <p class="role">
+          <span class="lang lang-en">Hydrology · Lake modeling · Satellite remote sensing</span>
+          <span class="lang lang-zh">水文学 · 湖泊模型 · 卫星遥感</span>
+        </p>
+        <p class="hero-affiliation">
+          <span class="lang lang-en">Ph.D. in Hydraulic Engineering · Tsinghua University</span>
+          <span class="lang lang-zh">清华大学水利工程博士</span>
+        </p>
+      </div>
+      <p class="hero-location">
+        <span class="lang lang-en">Tibetan Plateau fieldwork</span>
+        <span class="lang lang-zh">青藏高原野外科考</span>
+      </p>
+    </header>
+
+    <main>
+      <section id="profile" class="profile-section">
+        <div class="container">
+          <h2>
+            <span class="lang lang-en">Profile</span>
+            <span class="lang lang-zh">简介</span>
+          </h2>
+          <div class="profile-intro">
+            <img class="portrait" src="assets/profile-yiming-glacier.jpeg" alt="Yiming Wang during glacier fieldwork">
+            <div>
+              <p class="contact">
             <span class="lang lang-en">Beijing, China</span>
             <span class="lang lang-zh">北京，中国</span> ·
             <a href="mailto:wang-ym17@tsinghua.org.cn">wang-ym17@tsinghua.org.cn</a> ·
@@ -34,37 +81,31 @@
               <span class="lang lang-en">CV</span>
               <span class="lang lang-zh">个人简历</span>
             </a>
-          </p>
-        </div>
-      </header>
-
-      <section>
-        <h2>
-          <span class="lang lang-en">Profile</span>
-          <span class="lang lang-zh">简介</span>
-        </h2>
-        <p class="lang lang-en">
-          I am a hydrology and remote-sensing researcher with a Ph.D. in Hydraulic Engineering from
-          Tsinghua University. My research focuses on global lake hydrological and thermal dynamics,
-          lake water temperature, climate impacts on freshwater systems, compound hydro-climatic extremes,
-          satellite data fusion, process-based modeling, machine learning, and high-performance geospatial analysis.
-        </p>
-        <p class="lang lang-zh">
-          我是一名水文学与卫星遥感研究者，于清华大学获得水利工程博士学位。我的研究关注全球湖泊水文与热力动态、
-          湖泊水温、气候变化对淡水系统的影响、复合水文气候极端事件、卫星遥感数据融合、过程模型、机器学习和高性能地理空间分析。
-        </p>
-        <p class="lang lang-en">
-          My doctoral work reconstructed hydro-thermal changes for more than 1.4 million lakes and examined
-          climate-driven low-water and high-temperature extremes. I am interested in interdisciplinary lake
-          science that connects physical lake environments with ecological responses, including changes in
-          thermal and oxythermal habitats, lake ice and phenology, reservoir storage, water quality, and
-          freshwater adaptation under climate change.
-        </p>
-        <p class="lang lang-zh">
-          我的博士研究重建了全球超过140万个湖泊的水文-热力变化，并分析气候驱动的低水位和高水温复合极端事件。
-          我希望开展连接湖泊物理环境与生态响应的交叉研究，包括热与温氧栖息地变化、湖冰与物候、水库蓄水、
-          水质以及气候变化背景下的淡水生态适应。
-        </p>
+              </p>
+              <p class="lang lang-en">
+                I am a hydrology and remote-sensing researcher with a Ph.D. in Hydraulic Engineering from
+                Tsinghua University. My research focuses on global lake hydrological and thermal dynamics,
+                lake water temperature, climate impacts on freshwater systems, compound hydro-climatic extremes,
+                satellite data fusion, process-based modeling, machine learning, and high-performance geospatial analysis.
+              </p>
+              <p class="lang lang-zh">
+                我是一名水文学与卫星遥感研究者，于清华大学获得水利工程博士学位。我的研究关注全球湖泊水文与热力动态、
+                湖泊水温、气候变化对淡水系统的影响、复合水文气候极端事件、卫星遥感数据融合、过程模型、机器学习和高性能地理空间分析。
+              </p>
+              <p class="lang lang-en">
+                My doctoral work reconstructed hydro-thermal changes for more than 1.4 million lakes and examined
+                climate-driven low-water and high-temperature extremes. I am interested in interdisciplinary lake
+                science that connects physical lake environments with ecological responses, including changes in
+                thermal and oxythermal habitats, lake ice and phenology, reservoir storage, water quality, and
+                freshwater adaptation under climate change.
+              </p>
+              <p class="lang lang-zh">
+                我的博士研究重建了全球超过140万个湖泊的水文-热力变化，并分析气候驱动的低水位和高水温复合极端事件。
+                我希望开展连接湖泊物理环境与生态响应的交叉研究，包括热与温氧栖息地变化、湖冰与物候、水库蓄水、
+                水质以及气候变化背景下的淡水生态适应。
+              </p>
+            </div>
+          </div>
         <dl class="details">
           <div>
             <dt>
@@ -104,11 +145,13 @@
               <span class="lang lang-zh">全球湖泊、水库、地下水、湖冰、冰川和淡水气候极端事件</span>
             </dd>
           </div>
-        </dl>
+          </dl>
+        </div>
       </section>
 
-      <section>
-        <h2>
+      <section id="publications">
+        <div class="container">
+          <h2>
           <span class="lang lang-en">Selected Publications</span>
           <span class="lang lang-zh">论文列表</span>
         </h2>
@@ -172,11 +215,13 @@
             <em>Earth System Science Data</em>, 15, 5281-5300.
             <a href="https://doi.org/10.5194/essd-15-5281-2023">doi:10.5194/essd-15-5281-2023</a>
           </li>
-        </ol>
+          </ol>
+        </div>
       </section>
 
-      <section>
-        <h2>
+      <section id="awards">
+        <div class="container">
+          <h2>
           <span class="lang lang-en">Awards and Honors</span>
           <span class="lang lang-zh">奖励与荣誉</span>
         </h2>
@@ -204,11 +249,13 @@
           <li><strong>Wiley Top Viewed Article Recognition（高浏览量论文认可）</strong>，2025年，因<em>Water Resources Research</em>论文“Monthly monitoring of inundated areas and water storage dynamics in China's large reservoirs using multisource remote sensing”获得认可</li>
           <li><strong>张光斗科技教育基金优秀学生奖学金</strong>，2020年、2024年，授予中国水利工程领域优秀学生</li>
           <li><strong>清华大学“挑战杯”特等奖</strong>，2020年，授予校级学生学术科技作品前10名项目</li>
-        </ul>
+          </ul>
+        </div>
       </section>
 
-      <section>
-        <h2>
+      <section id="fieldwork">
+        <div class="container">
+          <h2>
           <span class="lang lang-en">Field Photos</span>
           <span class="lang lang-zh">野外科考照片</span>
         </h2>
@@ -221,6 +268,7 @@
           <img src="assets/field/tibet-snow-mountains.jpeg" alt="Snow-covered mountain landscape on the Tibetan Plateau" loading="lazy">
           <img src="assets/field/tibet-lake-shore.jpeg" alt="High-altitude lake shoreline during fieldwork" loading="lazy">
           <img src="assets/field/tibet-lake-grassland.jpeg" alt="High-altitude lake and grassland landscape during fieldwork" loading="lazy">
+          </div>
         </div>
       </section>
     </main>
@@ -253,34 +301,6 @@
       }
       setLanguage(savedLanguage === "zh" ? "zh" : "en");
 
-      const animatedBlocks = document.querySelectorAll(".profile, main > section");
-      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-      if (!reducedMotion) {
-        document.body.classList.add("motion-ready");
-
-        animatedBlocks.forEach((block, index) => {
-          block.style.setProperty("--stagger", `${Math.min(index * 70, 210)}ms`);
-        });
-
-        if ("IntersectionObserver" in window) {
-          const revealObserver = new IntersectionObserver(
-            (entries) => {
-              entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                  entry.target.classList.add("is-visible");
-                  revealObserver.unobserve(entry.target);
-                }
-              });
-            },
-            { threshold: 0.12 }
-          );
-
-          animatedBlocks.forEach((block) => revealObserver.observe(block));
-        } else {
-          animatedBlocks.forEach((block) => block.classList.add("is-visible"));
-        }
-      }
     </script>
   </body>
 </html>
